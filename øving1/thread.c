@@ -7,17 +7,17 @@ int i = 0;
 
 // Note the return type: void*
 void* incrementingThreadFunction(){
-    for (j = 1; i <= 1000000; j++) 
+    for (int j = 1; i <= 1000000; j++) 
     { 
-        i += 1;     
+        i++;     
     } 
     return NULL;
 }
 
 void* decrementingThreadFunction(){
-    for (j = 1; i <= 1000000; j++) 
+    for (int j = 1; i <= 1000000; j++) 
     { 
-        i -= 1;     
+        i--;     
     }        
     return NULL;
 }
